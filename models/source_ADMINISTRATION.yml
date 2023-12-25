@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+- name: SNOWPIPE_DB_ADMINISTRATION
+  database: SNOWPIPE_DB
+  schema: ADMINISTRATION
+
+  tables:
+  - name: SNOWPIPE_DB_CH2MCAL
+    identifier: CH2MCAL
+
+  - name: SNOWPIPE_DB_CH2MCCAL
+    identifier: CH2MCCAL
+
+  - name: SNOWPIPE_DB_CH2MCALKB
+    identifier: CH2MCALKB
+
+  - name: SNOWPIPE_DB_CH2MCCALKB
+    identifier: CH2MCCALKB
