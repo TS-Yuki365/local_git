@@ -1,0 +1,25 @@
+with
+     ORG as (select * from {{ref('stg_ORGMASTER')}}),
+     LOC as(select * from {{ source('ADMINISTRATION_DB_PUBLIC','ADMINISTRATION_DB_O_KTRLA015ZZ0KH20043') }})
+
+select  
+    ORG.SZCD, 
+    ORG.BMNCD, 
+    ORG.BMNNAM, 
+    ORG.RSKBMNNAM, 
+    ORG.BUCD, 
+    ORG.SSKBUNAM1, 
+    ORG.RSKBUNAM, 
+    ORG.STKCD, 
+    ORG.SSKSTKNAM,
+    ORG.RSKSTKNAM,
+    ORG.EBNSMS1, 
+    ORG.EBNSMS2, 
+    ORG.KKRGCD, 
+    ORG.SSKKKRGNAM, 
+    ORG.RSKKRGNAM, 
+    ORG.KMCD, 
+    ORG.KKRGLOCCD as LOCCD, 
+    LOC.LOCNAM
+    FROM ORG LEFT OUTER JOIN LOC
+    ON ORG.KKRGLOCCD = LOC.LOCCD
