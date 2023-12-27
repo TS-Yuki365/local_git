@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+- name: ADMINISTRATION_DB_PUBLIC
+  database: ADMINISTRATION_DB
+  schema: PUBLIC
+
+  tables:
+  - name: ADMINISTRATION_DB_O_KTRLA015ZZ0KH20043
+    identifier: O_KTRLA015ZZ0KH20043
