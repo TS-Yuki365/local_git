@@ -17,3 +17,11 @@ sources:
 
   - name: SNOWPIPE_DB_CH2MCCALKB
     identifier: CH2MCCALKB
+
+  - name: SNOWPIPE_DB_ORGMASTER
+    identifier: ORGMASTER
+
+# - name: ADMINISTRATION_DB_PUBLIC
+#   database: ADMINISTRATION_DB
+#   schema: PUBLIC
+   
